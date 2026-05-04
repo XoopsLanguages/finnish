@@ -1,0 +1,80 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    fi
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', 'Järjestelmä');
+define('_MI_SYSTEM_DESC', 'Sivuston ydinasetusten hallintaan.');
+define('_MI_SYSTEM_BNAME2', 'Käyttäjävalikko');
+define('_MI_SYSTEM_BNAME3', 'Kirjaudu');
+define('_MI_SYSTEM_BNAME4', 'Etsi');
+define('_MI_SYSTEM_BNAME5', 'Odottava sisältö');
+define('_MI_SYSTEM_BNAME6', 'Päävalikko');
+define('_MI_SYSTEM_BNAME7', 'Sivuston tiedot');
+define('_MI_SYSTEM_BNAME8', 'Kuka on paikalla');
+define('_MI_SYSTEM_BNAME9', 'Aktiivisimmat kirjoittajat');
+define('_MI_SYSTEM_BNAME10', 'Uudet jäsenet');
+define('_MI_SYSTEM_BNAME11', 'Viimeisimmät kommentit');
+define('_MI_SYSTEM_BNAME12', 'Ilmoitusasetukset');
+define('_MI_SYSTEM_BNAME13', 'Teemat');
+define('_MI_SYSTEM_ADMENU1', 'Bannerit');
+define('_MI_SYSTEM_ADMENU2', 'Lohkot');
+define('_MI_SYSTEM_ADMENU3', 'Ryhmät');
+define('_MI_SYSTEM_ADMENU5', 'Moduulit');
+define('_MI_SYSTEM_ADMENU6', 'Asetukset');
+define('_MI_SYSTEM_ADMENU7', 'Hymiöt');
+define('_MI_SYSTEM_ADMENU9', 'Käyttäjätasot');
+define('_MI_SYSTEM_ADMENU10', 'Muokkaa käyttäjää');
+define('_MI_SYSTEM_ADMENU11', 'Lähetä sähköpostia käyttäjille');
+define('_MI_SYSTEM_ADMENU12', 'Etsi käyttäjiä');
+define('_MI_SYSTEM_ADMENU13', 'Kuvat');
+define('_MI_SYSTEM_ADMENU14', 'Avatarit');
+define('_MI_SYSTEM_ADMENU15', 'Mallipohjat');
+define('_MI_SYSTEM_ADMENU16', 'Kommentit');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', 'Yleiset asetukset');
+define('_MI_SYSTEM_PREFERENCE_TIPS', 'Apua verkossa?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', 'Tämä antaa sinulle vinkkejä ja online-apua');
+define('_MI_SYSTEM_PREFERENCE_ICONS', 'Kuvakkeet');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', 'Leipäpuru');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', 'Aktiivinen osio');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', 'Aktiiviset avatarit');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', 'Aktiiviset bannerit');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', 'Aktiiviset kommentit');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', 'Aktiivinen tiedostonhallinta');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', 'Active Images Manager');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', 'Aktiiviset sähköpostikäyttäjät');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', 'Aktiiviset hymiöt');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', 'Aktiiviset käyttäjäarvot');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', 'Aktiiviset käyttäjät');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', 'Aktiivinen ylläpito');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', 'Hallinnoinnissa näytettävien rivien määrä');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', 'Näytettävien avatarien määrä sivulla');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', 'Näytettävien bannerien määrä sivulla');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', 'Sivua kohti näytettävien kommenttien määrä');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', 'Näytettävien ryhmien määrä sivulla');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', 'Näytettävien kuvien määrä sivulla');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', 'Sivua kohti näytettävien hymiöiden määrä');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', 'Sivua kohti näytettävien rivien määrä');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', 'Näytettävien käyttäjien määrä sivulla');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', 'Editorin asetukset');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', 'Editori lohkoille:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', 'Editori kommenteille:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', 'Editori kaikille moduuleille:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'jQuery-teema');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Poista käytöstä tilapäisesti');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'Sähköposti');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Yksityisviesti');
+define('_MI_SYSTEM_MENUS_ACTIVE', 'Ota valikkojärjestelmä käyttöön');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Ota käyttöön sisäänrakennettu valikonhallintajärjestelmä sivuston navigointia varten');

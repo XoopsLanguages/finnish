@@ -1,0 +1,662 @@
+KIELIEROT
+=====================
+
+Alla on kielierot versioiden välillä.
+
+================================
+30.3.2025: Versio 2.7.0-Betas (julkaistu aiemmin nimellä 2.5.12-Betas)
+================================
+/htdocs/modules/system/language/english/admin.php
+- lisätty define('_AM_SYSTEM_MENUS', 'Menut');
+- lisätty define('_AM_SYSTEM_MENUS_DESC', 'Hallitse sivuston navigointivalikoita');
+
+/htdocs/modules/system/language/english/modinfo.php
+- lisätty define('_MI_SYSTEM_MENUS_ACTIVE', 'Ota valikkojärjestelmä käyttöön');
+- lisätty define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Ota käyttöön sisäänrakennettu valikonhallintajärjestelmä sivuston navigointia varten');
+
+/htdocs/modules/system/language/english/admin/menus.php (UUSI TIEDOSTO)
+- lisätty define('_AM_SYSTEM_MENUS_NAV_MAIN', 'Valikkohallinta');
+- lisätty define('_AM_SYSTEM_MENUS_NAV_BACK', 'Takaisin valikkoluetteloon');
+- ​​lisätty define('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Luokkanäkymä');
+- lisätty define('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>Vihjeitä:</strong><ul>...');
+- lisätty define('_AM_SYSTEM_MENUS_ACTIVE', 'Aktiivinen');
+- lisätty define('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Käytössä');
+- lisätty define('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Poistettu');
+- lisätty define('_AM_SYSTEM_MENUS_SAVED', 'Tallennettu onnistuneesti');
+- lisätty define('_AM_SYSTEM_MENUS_DELETED', 'Poistettu onnistuneesti');
+- lisätty define('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Tilaus tallennettu');
+- lisätty define('_AM_SYSTEM_MENUS_LISTCAT', 'Lista kategoriat');
+- lisätty define('_AM_SYSTEM_MENUS_LISTITEM', 'List Items');
+- ​​lisätty define('_AM_SYSTEM_MENUS_ADDCAT', 'Lisää luokka');
+- lisätty define('_AM_SYSTEM_MENUS_EDITCAT', 'Muokkaa luokkaa');
+- lisätty define('_AM_SYSTEM_MENUS_DELCAT', 'Poista luokka');
+- lisätty define('_AM_SYSTEM_MENUS_CATTITLE', 'Category Title');
+- lisätty define('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Kielen vakionimeä (esim. MENUS_HOME) voidaan käyttää tässä, jotta nimike on käännettävissä.');
+- lisätty define('_AM_SYSTEM_MENUS_CATPREFIX', 'Etuliite (HTML)');
+- lisätty define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Valinnainen merkintä ennen luokan otsikkoa, kuten Font Awesome -kuvake.');
+- lisätty define('_AM_SYSTEM_MENUS_CATSUFFIX', 'Suffiksi (HTML)');
+- lisätty define('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Valinnainen merkintä kategorian otsikon jälkeen.');
+- lisätty define('_AM_SYSTEM_MENUS_CATURL', 'URL');
+- lisätty define('_AM_SYSTEM_MENUS_CATURL_DESC', 'Linkki itse luokkaan, kuten "index.php" tai absoluuttinen URL-osoite.');
+- ​​lisätty define('_AM_SYSTEM_MENUS_CATTARGET', 'Linkkikohde');
+- lisätty define('_AM_SYSTEM_MENUS_CATPOSITION', 'Position');
+- lisätty define('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', 'Haluatko varmasti poistaa kategorian "%s" ja kaikki sen kohteet?');
+- lisätty define('_AM_SYSTEM_MENUS_ADDITEM', 'Lisää tuote');
+- lisätty define('_AM_SYSTEM_MENUS_EDITITEM', 'Muokkaa kohdetta');
+- lisätty define('_AM_SYSTEM_MENUS_DELITEM', 'Poista kohde');
+- ​​lisätty define('_AM_SYSTEM_MENUS_ITEMTITLE', 'Tuotenimi');
+- added define('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Tässä voidaan käyttää kielen vakionimeä, jotta nimike on käännettävissä.');
+- lisätty define('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Etuliite (HTML)');
+- ​​lisätty define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Valinnainen merkintä ennen kohteen otsikkoa, kuten Font Awesome -kuvake.');
+- lisätty define('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Suffiksi (HTML)');
+- lisätty define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Valinnainen merkintä kohteen otsikon jälkeen. Tukee <{xoInboxCount}>-paikkamerkkiä.');
+- lisätty define('_AM_SYSTEM_MENUS_ITEMURL', 'URL');
+- lisätty define('_AM_SYSTEM_MENUS_ITEMTARGET', 'Linkin kohde');
+- lisätty define('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Position');
+- lisätty define('_AM_SYSTEM_MENUS_ITEMPARENT', 'Pääkohde');
+- lisätty define('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Category');
+- ​​lisätty define('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', 'Haluatko varmasti poistaa kohteen "%s" ja sen alikohdat?');
+- lisätty define('_AM_SYSTEM_MENUS_TARGET_SELF', 'Sama ikkuna');
+- lisätty define('_AM_SYSTEM_MENUS_TARGET_BLANK', 'Uusi ikkuna');
+- lisätty define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Ryhmät, jotka voivat nähdä tämän luokan');
+- lisätty define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Käyttäjillä on oltava luokkaoikeudet ennen kuin mikään sen kohteista tulee näkyviin.');
+- lisätty define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Ryhmät, jotka voivat nähdä tämän kohteen');
+- lisätty define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Tuoteluvat tarkistetaan pääluokan luvan jälkeen.');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'Kateoriaa ei löydy');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'Suojattua luokkaa ei voi poistaa');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'Ei voi aktivoida: luokka ei ole aktiivinen');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'Tuotetta ei löydy');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_ITEM PROTECTED', 'Suojattua kohdetta ei voi poistaa');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Virheellinen pääkohde valittu');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'Ei voida asettaa ylätasoa: se luo pyöreän viittauksen');
+- added define('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'Maksimaalinen sisäkkäisyyssyvyys (3 tasoa) ylitetty');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'Ei voi aktivoida: pääalkio on ei-aktiivinen');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'Tässä luokassa ei ole alivalikon kohteita.');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Ota tämä kohde käyttöön ennen sen muokkaamista');
+- lisätty define('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Ota tämä kohde käyttöön ennen sen poistamista');
+- lisätty define('MENUS_HOME', 'Home');
+- lisätty define('MENUS_ADMIN', 'Hallinta');
+- lisätty define('MENUS_ACCOUNT', 'Tili');
+- lisätty define('MENUS_ACCOUNT_EDIT', 'Muokkaa tiliä');
+- lisätty define('MENUS_ACCOUNT_LOGIN', 'Kirjaudu');
+- ​​lisätty define('MENUS_ACCOUNT_LOGOUT', 'Logout');
+- lisätty define('MENUS_ACCOUNT_REGISTER', 'Rekisteröidy');
+- lisätty define('MENUS_ACCOUNT_MESSAGES', 'Viestit');
+- lisätty define('MENUS_ACCOUNT_NOTIFICATIONS', 'Ilmoitukset');
+- lisätty define('MENUS_ACCOUNT_TOOLBAR', 'Työkalupalkki');
+
+/htdocs/modules/system/constants.php
+- lisätty define('XOOPS_SYSTEM_MENUS', 19);
+
+/htdocs/modules/system/language/english/blocks.php
+-added define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "Odottavan sisällön esto on vanhentunut XOOPS 2.5.11:n jälkeen, käytä odotusmoduulia");
+
+/htdocs/install/language/english/welcome.php
+- päivitetyt PHP- ja MySQL-versiot
+
+/htdocs/modules/pm/language/english/main.php
+- updated define('_PM_EMAIL_DESC', 'Hei %s, tämä on viesti, joka on siirretty tililtäsi osoitteessa ' . $GLOBALS['xoopsConfig']['sitename']);
+- updated define('_PM_EMAIL_DESC', 'Hei %s, tämä on viesti, joka on siirretty tililtäsi osoitteessa ' . $GLOBALS['xoopsConfig']['sitename']);
+
+/htdocs/language/english/user.php
+- päivitetty define('_US_SORRYNOTFOUND', 'Anteeksi, vastaavaa käyttäjätietoa ei löytynyt.');
+- updated define('_US_SORRYNOTFOUND', 'Jos tili vastaa annettuja tietoja, käsittelemme pyyntösi. Jos et saa sähköpostia lähiaikoina, tarkista roskapostikansiosi tai ota yhteyttä sivuston ylläpitäjään.');
+
+- päivitetty define('_US_PWDMAILED', 'Salasana %s lähetetty.');
+- updated define('_US_PWDMAILED', 'Jos tälle sähköpostille on olemassa tili, saat salasanan palautusohjeet. Tarkista tarvittaessa roskapostikansio tai ota yhteyttä sivuston ylläpitäjään.');
+
+- päivitetty define('_US_CONFMAIL', 'Vahvistussähköpostiosoite %s lähetetty.');
+- updated define('_US_CONFMAIL', 'Jos tälle sähköpostille on olemassa tili, saat salasanan palautusohjeet. Tarkista tarvittaessa roskapostikansio tai ota yhteyttä sivuston ylläpitäjään.');
+
+/htdocs/class/xoopseditor/tinymce5/language/english.php
+- nimettiin uudelleen _XOOPS_EDITOR_TINYMCE_LANGUAGE5 kieleksi _XOOPS_EDITOR_TINYMCE5_LANGUAGE
+
+/htdocs/modules/system/themes/transition/language/english/admin.php
+- nimettiin _OXYGEN_Server_API uudelleen muotoon _OXYGEN_SERVER_API
+
+/htdocs/modules/system/language/english/admin/preferences.php.
+- lisätty define('_MD_AM_SENDMAIL_NOT_FOUND', 'Sendmail-binaaria ei löydy. Tarkista palvelimesi asetukset.');
+- lisätty define('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'Kelpaa sendmail-yhteensopivaa binaaria ei havaittu. Asenna MTA (esim. Postfix, msmtp) tai vaihda SMTP:hen asetuksista.');
+
+/htdocs/modules/system/language/english/admin/users.php
+- lisätty define('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Tuntematon ryhmä');
+
+/htdocs/modules/system/language/english/comment.php
+- lisätty define('_CM_ADDCOMMENT', 'Lisää kommentti');
+
+
+/htdocs/install/language/english/install.php
+- lisätty define('_WEBSITE_NAME', 'XOOPS-sivusto');
+- lisätty define('_WEBSITE_SLOGAN', 'Käytä vain!');
+- lisätty define('_WEBSITE_META_KEYWORDS', 'xoops, verkkosovelluskehys, cms, sisällönhallintajärjestelmä');
+- lisätty define('_WEBSITE_FOOTER', "Tehon tarjoaa XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='The XOOPS Project'>XOOPS-projekti</a>");
+- lisätty define('_WEBSITE_COPYRIGHT', 'Tekijänoikeus © 2001-{X_YEAR}');
+- lisätty define('_WEBSITE_DESCRIPTION', 'XOOPS on dynaaminen oliopohjainen avoimen lähdekoodin portaalin skripti, joka on kirjoitettu PHP:llä.');
+- lisätty define('_WEBSITE_CENSOR_REPLACE', 'OHP');
+
+
+================================
+2023/10/01: Versio 2.5.11 - Lopullinen
+================================
+/language/english/uploader.php
+-added define('_ER_UP_MODE_NOT_CHANGED', 'Tiedosto ladattu, mutta tilaa ei voitu muuttaa');
+
+================================
+2023/10/01: Versio 2.5.11-RC3
+================================
+
+MUUTETUT TIEDOSTOT:
+upgrade/language/english/upgrade.php
+päivitys/language/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/language/english.php
+- lisätty define('_FAILGETIMG', 'Kuvan hakeminen %s');
+
+/htdocs/modules/system/language/english/modinfo.php
+- lisätty define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Poista tilapäisesti');
+- lisätty define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'Sähköposti');
+- ​​lisätty define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Yksityinen viesti');
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- lisätty define('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Oletusilmoitustapa');
+- lisätty define('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'Uusille käyttäjille, kun he tilaavat ilmoituksia esim. foorumilta.');
+- lisätty define('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: Versio 2.5.11-RC1
+================================
+
+MUUTETUT TIEDOSTOT:
+htdocs/language/english/global.php
+- lisätty define('_DB_QUERY_ERROR', 'Kysely epäonnistui! SQL: %s - Virhe: ');
+- lisätty define('_PRINT', 'Tulosta');
+- lisätty define('_PDF', 'PDF');
+- ​​lisätty define('_OFF', 'Pois');
+
+================================
+9.2.2021: Versio 2.5.11-Betas
+================================
+
+MUUTETUT TIEDOSTOT:
+htdocs/language/english/admin.php
+- lisätty define('_AD_WARNING_NO_XML', 'Tälle funktiolle tarvitaan PHP XML -laajennus.');
+
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- lisätty define('_AM_ADMINSTATS_LAST_MONTH', 'Viime kuukausi');
+- lisätty define('_AM_ADMINSTATS_LAST_WEEK', 'Viime viikko');
+- lisätty define('_AM_ADMINSTATS_LAST_DAY', 'Viime päivä');
+- ​​lisätty define('_AM_ADMINSTATS_LAST_HOUR', 'Viimeinen tunti');
+
+htdocs/language/english/global.php
+- lisätty define('_PRINT', 'Tulosta');
+- lisätty define('_PDF', 'PDF');
+- ​​lisätty define('_OFF', 'Pois');
+- muutettu define('_ON', 'Päällä'); //alkaen 'on'
+
+htdocs/language/english/global.php
+- ​​muutettu define('_SIZE', 'Koko'); // fontin koko
+- muutettu define('_FONT', 'Fontti'); // kirjasinperhe
+- muutettu define('_COLOR', 'Väri'); // fontin väri
+
+htdocs/install/language/english/install.php
+- lisätty define('ERR_COPY_CONFIG_FILE', 'Asetustiedostoa %s ei voitu kopioida');
+
+htdocs/install/language/english/welcome.php
+- muutettu suositeltuja PHP- ja MySQL-versioita, linkit muutettu muotoon "https:"
+
+htdocs/modules/system/language/english/admin/preferences.php
+- muutettu define('_MD_AM_SMTPHOSTDESC', 'Joko yksi isäntänimi tai useita puolipisteellä eroteltuja isäntänimiä.<br>Voit myös määrittää eri portin kullekin isännälle käyttämällä tätä muotoa: [isäntänimi:portti] (esim. "smtp1.example.com:25.example.com":25;example.smt. salaustyyppi, esimerkiksi: (esim. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>Isännät kokeillaan järjestyksessä.');
+
+htdocs/modules/system/language/english/help/blocksadmin.html
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- muutettu define('_AM_SYSTEM_MODULES_ADMIN', 'XOOPS-moduulin hallinta');
+
+UUSIA TIEDOSTOJA:
+htdocs/themes/xswatch4/language/english/main.php
+Aloitettu kopiona tiedostosta xswatch/language/english/main.php, sitten:
+- lisätty define('THEME_TOOLBAR_DEBUGMODE', 'Debug Mode');
+- lisätty define('THEME_TOOLBAR_THIS_MODULE', 'Tämä moduuli');
+- lisätty define('THEME_PERMISSIONS_LEGEND', 'Luvat ja selitteet');
+- lisätty define('THEME_INBOX_ALERT', 'PM Alert');
+- lisätty define('THEME_INBOX_LINK', 'Klikkaa tästä nähdäksesi postilaatikkosi!');
+- lisätty define('THEME_EVENT_DOWNLOADS', 'Tapahtumien lataukset');
+- ​​lisätty define('THEME_FILE_NAME', 'Tiedosto');
+- lisätty define('THEME_FILE_SIZE', 'Koko');
+- lisätty define('THEME_CONTROL_NEXT', 'Seuraava');
+- lisätty define('THEME_CONTROL_PREVIOUS', 'Edellinen');
+
+htdocs/language/english/user.php
+- lisätty define('_US_DESCRIPTIONMIN', 'Vaadittu vähimmäispituus: %s');
+- lisätty define('_US_DESCRIPTIONMAX', 'Maksimipituus: %s');
+
+htdocs/modules/system/language/english/admin/mailusers.php
+- lisätty define('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} tulostaa nimen tai unamen, jos se on tyhjä');
+
+htdocs/modules/system/language/english/admin/images.php
+- lisätty define("_AM_SYSTEM_IMAGES_SCATDELNG","Tätä luokkaa ei voi poistaa");
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- ​​lisätty define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Tämän moduulin ylläpitäjä');
+
+POISTETUT TIEDOSTOT:
+htdocs/modules/system/language/english/admin/users.php
+- deleted define('_AM_SYSTEM_USERS_MODIFYUSER', 'Muokkaa käyttäjää');
+- deleted define('_AM_SYSTEM_USERS_DELUSER', 'Poista käyttäjä');
+- deleted define('_AM_SYSTEM_USERS_GO', 'Mene!');
+
+================================
+29.4.2019: Versio 2.5.10 lopullinen
+================================
+LISÄTYT/POISTETUT MÄÄRITELMÄT:
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- lisätty define('_AM_LABEL_BAN_BY_IP', 'Kiellä tarkistettujen tietueiden IP-osoitteet:');
+- lisätty define('_AM_BUTTON_BAN_BY_IP', 'IP-kielto!');
+- lisätty define('_AM_JS_BANCONFIRM', 'IP-kiellot OK?');
+- lisätty define('_AM_MSG_BANNEDIP', 'IP:t ovat kiellettyjä');
+- lisätty define('_AM_ADMINSTATS_TITLE', 'Suojauslokin yhteenveto');
+
+htdocs/xoops_lib/modules/protector/language/english/modinfo.php
+- lisätty define($constpref . '_ADMINSTATS', 'Yleiskatsaus');
+- ​​lisätty define($constpref . '_BANIP_TIME0DSC', 'Keskeytysaika sekunneissa automaattisille IP-estoille');
+
+htdocs/language/english/uploader.php
+- lisätty define('_ER_UP_INDEXNOTSET', 'Yritetään noutaa useita tiedostoja, indeksi on asetettava.');
+
+htdocs/language/english/admin.php
+- added define('_AD_WARNING_OLD_PHP', 'VAROITUS: Harkitse päivittämistä uudempaan PHP-versioon. Versio %s tai uudempi on suositeltavaa ja sitä vaaditaan tulevissa XOOPS-versioissa.');
+
+MUUTTEET MÄÄRITELMÄT
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_TXT_HOWTOCHANGEDB',"Jos haluat muuttaa etuliitettä,<br> muokkaa %s/data/secure.php manuaalisesti.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- muutettu suositeltua PHP-versiota, lisätty Special Notes -osio SELinuxille
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- '_AM_MODULEADMIN_ADMIN_FOOTER':n määritelmässä XOOPS-linkit muutettiin muotoon 'https://xoops.org'
+
+UUSIA TIEDOSTOJA:
+ei käytössä
+
+===============================
+1.8.2017: Versio 2.5.9 lopullinen
+===============================
+LISÄTYT/POISTETUT MÄÄRITELMÄT
+
+htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- lisätty define('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Summa');
+- lisätty define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Anna USD-summa, esim. 25,00 $');
+- lisätty define('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD');
+- lisätty define('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+- lisätty define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- lisätty define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Lahjoita PayPalin tai yleisen luottokortin avulla verkossa!');
+
+htdocs/install/language/english/install.php
+*HUOMAA* Asennusohjelmaa on muutettu merkittävästi, joten tämä tiedosto tulee tarkistaa huolellisesti
+- lisätty define("CURL_HTTP", "Client URL Library (cURL)");
+- lisätty define('XOOPS_COOKIE_DOMAIN_LABEL', 'verkkosivuston evästeverkkotunnus');
+- lisätty define('XOOPS_COOKIE_DOMAIN_HELP', 'Domain asettaa evästeet. Voi olla tyhjä, koko isäntä URL-osoitteesta (www.example.com) tai rekisteröity verkkotunnus ilman aliverkkotunnuksia (example.com) jaettavaksi aliverkkotunnusten kesken (www.example.com ja blogi.fi)');
+- lisätty define('INTL_SUPPORT', 'Kansainvälistymisfunktiot');
+- lisätty define('XOOPS_SOURCE_CODE', "XOOPS GitHubissa");
+- lisätty define('XOOPS_INSTALLING', 'Asennetaan');
+- lisätty define('XOOPS_ERROR_ENCOUNTERED', 'Virhe');
+- lisätty define('XOOPS_ERROR_SEE_BELOW', 'Katso viestit alta.');
+- ​​lisätty define('MODULES_AVAILABLE', 'Saatavilla olevat moduulit');
+- lisätty define('INSTALL_THIS_MODULE', 'Lisää %s');
+
+htdocs/install/language/english/finish.php
+- muuta ohjaamaan uusia käyttäjiä osoitteeseen xoops.org saadaksesi tietoja moduuleista ja teemoista
+
+htdocs/language/english/global.php
+- lisätty define('_UPLOAD', 'Lataa');
+- lisätty define('_SELECTFILES', 'Valitse tiedostot');
+- lisätty define('_DROPFILESHERE', 'Pudota tiedostot tähän');
+- lisätty define('_RETRY', 'Yritä uudelleen');
+- lisätty define('_OK', 'Ok');
+- lisätty define('_FORMATPROGRESS', '{percent}% of {total_size}');
+- ​​lisätty define('_FAILUPLOAD', 'Lataus epäonnistui!');
+- lisätty define('_WAITINGFORRESPONSE', 'Käsittelyssä...');
+- lisätty define('_PAUSED', 'Keskeytetty');
+- lisätty define('_PROCESSINGDROPPEDFILES', 'Käsittelyssä hylättyjä tiedostoja...');
+- lisätty define('_TYPEERROR', '{tiedostolla} on virheellinen pääte. Kelvolliset laajennukset: {extensions}!');
+- lisätty define('_SIZEERROR', '{tiedosto} on liian suuri, tiedoston enimmäiskoko on {sizeLimit}!');
+- lisätty define('_MINSIZEERROR', '{file} on liian pieni, tiedoston vähimmäiskoko on {minSizeLimit}!');
+- added define('_EMPTYERROR', '{file} on tyhjä, valitse tiedostot uudelleen ilman sitä!');
+- ​​lisätty define('_NOFILESERROR', 'Ei ladattavia tiedostoja!');
+- lisätty define('_TOOMANYITEMSERROR', 'Liian monta kohdetta ({netItems}) ladattaisiin. Tuoterajoitus on {itemLimit}!');
+- lisätty define('_MAXHEIGHTIMAGEERROR', 'Kuva on liian korkea!');
+- lisätty define('_MAXWIDTHIMAGEERROR', 'Kuva on liian leveä!');
+- lisätty define('_MINHEIGHTIMAGEERROR', 'Kuva ei ole tarpeeksi korkea!');
+- lisätty define('_MINWIDTHIMAGEERROR', 'Kuva ei ole tarpeeksi leveä!');
+- lisätty define('_RETRYFAILTOOMANYITEMS', 'Uudelleenyritys epäonnistui - olet saavuttanut tiedostorajoituksen!');
+- ​​added define('_ONLEAVE', 'Tiedostoja ladataan, jos lähdet nyt, lataus peruuntuu!');
+- lisätty define('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Peruuttamaton virhe - tämä selain ei salli minkäänlaista tiedostojen lataamista iOS8 Safarin vakavien virheiden vuoksi. Käytä iOS8 Chromea, kunnes Apple korjaa nämä ongelmat!');
+
+htdocs/language/english/uploader.php
+- lisätty define('_ER_UP_INISIZE', 'Ladattu tiedosto ylittää php.ini-tiedoston upload_max_filesize-direktiivin');
+- added define('_ER_UP_FORMSIZE', 'Ladattu tiedosto ylittää MAX_FILE_SIZE-komennon, joka määritettiin HTML-lomakkeessa');
+- lisätty define('_ER_UP_PARTIAL', 'Ladattu tiedosto ladattiin vain osittain');
+- lisätty define('_ER_UP_NOFILE', 'Tiedostoa ei ladattu');
+- lisätty define('_ER_UP_NOTMPDIR', 'Väliaikainen kansio puuttuu');
+- lisätty define('_ER_UP_CANTWRITE', 'Tiedoston kirjoitus levylle epäonnistui');
+- lisätty define('_ER_UP_EXTENSION', 'Tiedoston lataus keskeytetty laajennuksen takia. Näytä phpinfo()');
+- lisätty define('_ER_UP_UNKNOWN', 'Tuntematon latausvirhe');
+
+htdocs/language/english/user.php
+- ​​deleted define('_US_USECOOKIE', 'Tallenna käyttäjänimeni evästeeseen 1 vuoden ajan');
+
+htdocs/modules/profile/language/english/admin.php
+- lisätty define('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'Et voi poistaa verkkovastaavan tiliä käytöstä');
+
+htdocs/modules/system/language/english/admin/comments.php
+- lisätty define('_MP_DELETECOUNT', 'Ryhmän jäsenmäärä on liian suuri ( > 4 000) ');
+
+htdocs/modules/system/language/english/admin/userrank.php
+- lisätty define('_AM_SYSTEM_USERRANK_ERROR', 'Virheet');
+
+upgrade/language/english/upgrade.php
+- lisätty define('_LANGUAGE', 'Language');
+- lisätty define('_SUPPORT', 'Tuki');
+- lisätty define('_XOOPS_SOURCE_CODE', 'XOOPS GitHubissa');
+- lisätty define('_PATCH_COUNT', 'Paikkausjoukot');
+- lisätty define('_USERNAME_PLACEHOLDER', 'Käyttäjänimesi');
+- lisätty define('_PASSWORD_PLACEHOLDER', 'Salasanasi');
+- lisätty define('_CONTINUE', 'Jatka');
+- lisätty define('XOOPS_ERROR_ENCOUNTERED', 'Virhe');
+- lisätty define('XOOPS_ERROR_SEE_BELOW', 'Katso viestit alta.');
+
+htdocs/themes/xbootstrap/language/english/main.php
+- lisätty define("TEEMA_KÄYTTÄJÄ_TERVETULOA", "Tervetuloa");
+
+UUSIA TIEDOSTOJA:
+- htdocs/modules/system/themes/transition/language/english/admin.php
+- htdocs/modules/system/themes/transition/language/english/localsupport.php
+
+- päivitä/kieli/englanti/
+*HUOMAA* Päivityskoodia on muutettu merkittävästi, joten nämä tiedostot tulee tarkistaa huolellisesti
+- siirsi kaikki korjauskohtaiset kielitiedostot korjaustiedostohakemistoista päivitykseen/language/*
+  eli upgrade/upd-2.0.18-to-2.3.0/language/english.php muuttui
+  upgrade/language/english/upd-2.0.18-to-2.3.0.php
+
+- upgrade/language/english/support.php (sama kuin htdocs/install/language/english/support.php)
+- päivitä/kieli/english/welcome.php
+
+===============================
+27.5.2016: Versio 2.5.8
+===============================
+LISÄTYT/POISTETUT MÄÄRITELMÄT
+
+/install/language/english/install.php
+/modules/system/language/english/admin/modulesadmin.php
+- lisätty define('_AM_SYSTEM_MODULES_INSTALL_MORE',"Asenna lisää moduuleja");
+
+/modules/system/language/english/admin/users.php
+define('_AM_SYSTEM_USERS_ACTIVATE', 'Aktivoi käyttäjä');
+
+/modules/system/language/english/blocks.php
+define('_MB_SYSTEM_BLOCK_HEIGHT',"Lohkon korkeus (rivit)");
+
+install/language/english/install.php
+define('CHMOD_CHGRP_REPEAT', 'Yritä uudelleen');
+define('CHMOD_CHGRP_IGNORE', 'Käytä joka tapauksessa');
+define('CHMOD_CHGRP_ERROR', 'Asennusohjelma ei ehkä pysty kirjoittamaan asetustiedostoa %1$s.<p>PHP kirjoittaa tiedostoja käyttäjän %2$s ja ryhmän %3$s alla.<p>Kauhea
+
+MUUTTEET MÄÄRITELMÄT
+xoops_lib/modules/protector/language/english/modinfo.php
+define($constpref . '_HIJACK_TOPBITDSC', ...
+
+/modules/system/themes/default/language/english/admin.php
+define('_OXYGEN_CODESVN', 'Koodivarasto');
+
+install/language/english/install.php
+define('SAVED_MAINFILE', 'Asetukset tallennettu');
+define('ERR_NEED_WRITE_ACCESS', 'Palvelimelle on annettava kirjoitusoikeus seuraaviin tiedostoihin ja kansioihin<br />(eli <em>chmod 775 directory_name</em> UNIX/LINUX-palvelimella)<br />Jos niitä ei ole saatavilla tai niitä ei ole luotu oikein, luo manuaalisesti käyttöoikeudet ja määritä ne oikein.');
+define('ERR_COPY_MAINFILE', 'Jakelutiedostoa ei voitu kopioida kohteeseen %s');
+define('ERR_WRITE_MAINFILE', 'Ei voitu kirjoittaa kohteeseen %s. Tarkista tiedoston käyttöoikeudet ja yritä uudelleen.');
+define('ERR_READ_MAINFILE', 'Ei voitu avata %s lukemista varten');
+
+/modules/system/themes/zetadigme/language/english/admin.php
+define('_MD_CODESVN', 'Koodivarasto');
+
+UUSIA TIEDOSTOJA:
+/language/english/stopwords.php
+/language/english/xmf.php
+
+PÄIVITETTY XoopsMailerLocal-luokkaesimerkki:
+htdocs/language/english/xoopsmailerlocal.php
+
+===============================
+14.6.2014: Versio 2.5.7 lopullinen
+===============================
+LISÄTYT/POISTETUT MÄÄRITELMÄT
+
+/install/language/english/install.php
+- lisätty define('WRITTEN_LICENSE',"Kirjoitettu XOOPS %s Lisenssiavain: <strong>%s</strong>");
+
+===============================
+18.3.2014: Versio 2.5.7 RC1
+===============================
+LISÄTYT/POISTETUT MÄÄRITELMÄT
+
+/modules/system/language/english/admin.php
+- lisätty define('_AM_SYSTEM_USAGE',"Käyttö");
+- lisätty define('_AM_SYSTEM_ACTIVE',"Aktiivinen");
+
+
+===============================
+15.4.2012: Versio 2.5.5
+===============================
+LISÄTYT/POISTETUT MÄÄRITELMÄT
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- lisätty define("_AM_MODULEADMIN_HOME", "Home");
+- lisätty define("_AM_MODULEADMIN_DASHBOARD", "Dashboard");
+- lisätty define("_AM_MODULEADMIN_ABOUT", "Tietoja");
+- lisätty define("_AM_MODULEADMIN_PERMISSIONS", "Luvat");
+- lisätty define("_AM_MODULEADMIN_ABOUT_RELEASEDATE","Julkaistu: ");
+- lisätty define("_AM_MODULEADMIN_ABOUT_AUTHOR","Tekijä: ");
+- lisätty define("_AM_MODULEADMIN_ABOUT_CREDITS","Kreditaatiot: ");
+- lisätty define("_AM_MODULEADMIN_ABOUT_LICENSE","Lisenssi: ");
+- lisätty define("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Tekijän nimi: ");
+- lisätty define("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","Tekijätiedot");
+- added define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Tätä moduulia ylläpitää <a class='tooltip' rel='external' href='http://xoops.org/' title='Käy XOOPS-yhteisössä'>XOOPS-yhteisö</a");
+
+/language/english/calendar.php
+- lisätty define("_CAL_FORMAT","Y-m-d");
+
+/xoops_lib/modules/protector/language/english/modinfo.php
+
+- lisätty define($constpref."_ADMINHOME","Koti");
+- lisätty define($constpref."_ADMINABOUT","Tietoja");
+- lisätty define($constpref.'_STOPFORUMSPAM_ACTION','Lopeta keskustelupalsta');
+- lisätty define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Tarkistaa POST-tiedot www.stopforumspam.com-tietokantaan rekisteröityneitä roskapostittajia vastaan. Vaatii php CURL lib.');
+
+
+/install/language/english/install.php
+- lisätty define( "FILTER_FUNCTIONS", "Suodatinfunktiot");
+
+/language/english/global.php
+- lisätty define('_DBDATESTRING', 'Y-m-d');
+- lisätty define('_DBTIMESTRING', 'H:i:s');
+- lisätty define('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s');
+
+/language/english/pmsg.php
+- lisätty define('_PM_READ', 'Jo luettu');
+
+/modules/system/language/english/admin.php
+- lisätty define("_AM_SYSTEM_UNINSTALL","Poista asennus");
+
+KATSO MYÖS:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+17.11.2011: Versio 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+10.10.2011: Versio 2.5.4 RC
+===============================
+
+UUSIA TIEDOSTOJA:
+modules/pm/language/english/help/help.html
+modules/profile/language/english/help/help.html
+modules/protector/language/english/help/help.html
+
+LISÄTYT/POISTETUT MÄÄRITELMÄT
+
+/language/english/pmsg.php
+delete define('_PM_READ', 'Jo luettu');
+
+/language/english/user.php
+- lisätty define('_US_SKYPE', 'Skype');
+- lisätty define('_US_FACEBOOK', 'Facebook');
+
+/modules/pm/language/english/main.php
+- poistettu define("_PM_RECEIVE","RECEIVE");
+- poistettu define("_PM_POST","POST");
+- poistettu define("_PM_READBOX","READBOX");
+- deleted define("_PM_RSAVEBOX","Vastaanota_SAVEBOX");
+- poistettu define("_PM_SENTBOX","SENTBOX");
+- deleted define("_PM_PSAVEBOX","Post_SAVEBOX");
+- deleted define("_PM_SAVED","Tallennettu onnistuneesti");
+- deleted define("_PM_TOC","Lähettäjä: ");
+- deleted define("_PM_UID","Lähettäjän tunnus");
+
+/language/english/findusers.php
+- lisätty define('_MA_USER_FACEBOOK', 'Facebook-linkki'); //TEhdään
+- lisätty define('_MA_USER_SKYPE', 'Skype Link');//TO DO
+
+/modules/pm/language/english/modinfo.php
+- lisätty define("_PM_MI_ABOUT", "Tietoja");
+
+/modules/profile/language/english/admin.php
+- lisätty define('_PROFILE_AM_ACTION', 'Toiminto');
+
+/modules/profile/language/english/modinfo.php
+- lisätty define("_PROFILE_MI_ABOUT", "Tietoja");
+- lisätty define("_PROFILE_MI_HOME", "Home");
+
+
+/modules/system/language/english/admin/preferences.php
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Yleiset asetukset");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Käyttäjätietojen asetukset");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Sisällönkuvauskentät ja alatunniste");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Sanansensuuriasetukset");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Hakuvaihtoehdot");
+- ​​deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","Sähköpostin asetukset");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Todennusasetukset");*/
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","A faire");
+- deleted define("_MD_AM_LOADINGIMG", "Näyttö ladataan... kuvaa?");
+- deleted define("_MD_AM_CHNGUTHEME", "Vaihda kaikkien käyttäjien teema");
+
+/modules/system/language/english/admin/users.php
+- lisätty define("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Hyväksy sähköposti järjestelmänvalvojalta");
+
+- deleted define("_AM_SYSTEM_USERS_NAV_MANAGER","Käyttäjien hallinta");
+- deleted define("_AM_SYSTEM_USERS_USERPOST","Käyttäjäviestit");
+- deleted define("_AM_SYSTEM_USERS_STORIES","Tarinat");
+- deleted define("_AM_SYSTEM_USERS_COMMENTS","Kommentit");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Synkronoi tiedot painamalla alla olevaa painiketta, jos arvelet, että yllä olevat käyttäjäviestien tiedot eivät näytä osoittavan todellista tilaa");
+- deleted define("_AM_SYSTEM_USERS_CNGTCOM","Ei saatu kaikkia kommentteja");
+- deleted define("_AM_SYSTEM_USERS_CNGTST","Ei saatu tarinoita yhteensä");
+- deleted define("_AM_SYSTEM_USERS_LIST","Lista");
+- deleted define("_AM_SYSTEM_USERS_USERPOST","Käyttäjäviestit");
+- deleted define("_AM_SYSTEM_USERS_STORIES","Tarinat");
+- deleted define("_AM_SYSTEM_USERS_COMMENTS","Kommentit");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Synkronoi tiedot painamalla alla olevaa painiketta, jos uskot, että yllä olevat käyttäjäviestien tiedot eivät osoita todellista tilaa");
+- deleted define("_AM_SYSTEM_USERS_CNGTCOM","Kaikkia kommentteja ei voitu saada");
+- deleted define("_AM_SYSTEM_USERS_CNGTST","Kaikkia tarinoita ei voitu hakea");
+- deleted define("_AM_SYSTEM_USERS_LIST","Lista");
+
+xoops_lib/modules/protector/language/english/admin.php
+- lisätty define("_AM_ADV_REGISTERGLOBALS2","ja sijoita siihen alla oleva rivi:");
+
+MUUTETUT TIEDOSTOT:
+
+/modules/system/language/english/admin/users.php (Mamba)/
+/language/english/mail_template/activated.tpl
+/language/english/mail_template/adminactivate.tpl
+/language/english/mail_template/lostpass1.tpl
+/language/english/mail_template/lostpass2.tpl
+/language/english/mail_template/register.tpl
+/language/english/mail_template/welcome.tpl
+/modules/system/language/english/admin/avatars.php
+/modules/system/language/english/admin/banners.php
+/modules/system/language/english/admin/blocksadmin.php
+/modules/system/language/english/admin/comments.php
+/modules/system/language/english/admin/preferences.php
+/modules/system/language/english/admin/userrank.php
+/modules/system/language/english/admin/users.php
+/modules/system/language/english/help/mailusers.html
+/modules/system/language/english/help/preferences.html
+/modules/system/language/english/admin.php
+/modules/system/language/english/blocks.php
+/modules/system/language/english/modinfo.php
+/modules/system/themes/default/language/english/admin.php
+/modules/system/themes/zetadigme/language/english/admin.php
+/themes/suico/language/english/main.php
+/themes/zetagenesis/language/english/main.php
+
+
+===============================
+5.10.2011: Versio 2.5.4 Beta
+===============================
+- päivitetty useita englanninkielisiä käännöksiä (DCrussader/Mamba)
+- poistettu kieli/english/calendar.php _CAL_DEF_DATE_FORMAT
+- poistettu kieli/english/calendar.php _CAL_TT_DATE_FORMAT
+- poistetut moduulit/system/language/english/admin/users.php _AM_SYSTEM_USERS_NAV_MANAGER
+- poistetut moduulit/system/language/english/admin/preferences.php _MD_AM_LOADINGIMG
+- poistetut moduulit/system/language/english/admin/preferences.php _MD_AM_CHNGUTHEME
+- poistetut moduulit/pm/language/english/admin/main.php _PM_RECEIVE, _PM_POST, _PM_READBOX, _PM_RSAVEBOX, _PM_SENTBOX, _PM_PSAVEBOX, _PM_SAVED, _PM_TOC
+- lisätty /modules/profile/language/english/admin.php _PROFILE_AM_ACTION
+- lisätty /modules/profile/language/english/main.php _PROFILE_MI_ABOUT
+- lisätty /modules/profile/language/english/main.php _PROFILE_MI_HOME
+- lisätty /modules/pm/language/english/modinfo.php _PM_MI_ABOUT
+- lisätyt moduulit/system/language/english/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- lisätty kieli/english/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/language/english/modinfo.php
+- lisätty define($constpref.'_STOPFORUMSPAM_ACTION','Lopeta keskustelupalsta');
+- lisätty define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Tarkistaa POST-tiedot www.stopforumspam.com-tietokantaan rekisteröityneitä roskapostittajia vastaan. Vaatii php CURL lib.');
+
+
+
+===============================
+9.6.2011: Versio 2.5.2 RC
+===============================
+ - lisätty kieli/english/misc.php _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - lisätty kieli/english/pmsg.php _PM_SURE_TO_DELETE, _PM_READ
+ - lisätyt moduulit/pm/language/english/admin/main.php _PM_READ, _PM_SUBJECT_ICONS
+ - modules\system/language/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - poistettu modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+ - poistettu modules/system/language/english/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE
+ - lisätty kieli/english/calendar.php _CAL_DEF_DATE_FORMAT
+ - lisätty kieli/english/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+15.3.2011: Versio 2.5.1 RC
+===============================
+
+Lisätty kielivakiot:
+  modules/system/language/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Muokatut kielivakiot:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  modules/system/language/english/helper/help_center.html, modulesadmin.html
+
+Poistetut kielivakiot:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, OUR FORCEYGEN_TEXT _OXYGEN_POWERED_BY
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, OUR FORCEYGEN_TEXT _OXYGEN_POWERED_BY
