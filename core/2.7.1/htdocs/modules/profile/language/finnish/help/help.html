@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Apua: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Profiili <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----Ohjesisältö ---------- 
+<h4 class="odd">KUVAUS</h4>
+<p class="even">Profiilimoduuli on tarkoitettu mukautettujen käyttäjäprofiilikenttien hallintaan.</p>
+<h4 class="odd">ASENNA/POISTA</h4>
+<p>Erikoistoimenpiteitä ei tarvita, noudata tavallista asennusprosessia – pura /profile-kansio ../modules-hakemistoon. Asenna moduuli kohdasta Admin -&gt; System Module -&gt; Modules.</p>
+<p>Yksityiskohtaiset ohjeet moduulien asentamisesta ovat saatavilla osoitteessa <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">XOOPS-käyttöopas</a> <br/><br/></p>
+<h4 class="odd">KÄYTTÖOHJEET</h4>
+<p class="even">Tämän moduulin määrittäminen edellyttää:</p>
+<ul>
+<li>Määritä moduulin asetuksesi (katso "Asetukset") ja valinnaisesti Profiililohko, jos aiot käyttää sitä (katso "Blocks").</li>
+<li>Muokkaa olemassa olevia luokkia tai lisää uusia.</li>
+<li>Muokkaa olemassa olevia kenttiä tai lisää uusia. Täällä voit määrittää, mitkä kentät ovat näkyvissä missä luokassa ja ovatko ne näkyvissä käyttäjän rekisteröinnin yhteydessä.</li>
+<li>Määritä rekisteröintivaiheiden järjestys.</li>
+<li>Ja lopuksi voit määrittää käyttöoikeudet yksittäisille kentälle - mitkä ovat muokattavissa, mitkä haettavissa.<br/><br/></li>
+</ul>
+<h4 class="odd">Roskapostin estotoimenpiteet</h4>
+<p class="even">Minimoi roskapostirekisteröinnit seuraavasti:</p>
+<ul>
+<li> mene järjestelmänvalvojan Protector-moduuliin, valitse Asetukset ja sitten alareunassa tämä vaihtoehto:
+
+            "Lopeta foorumi roskaposti"
+            Tarkistaa POST-tiedot www.stopforumspam.com-tietokantaan rekisteröityjen roskapostittajien varalta. <br/>
+            Aseta asetukseksi "Ban the IP (no limit)"
+        </li>
+<br/>
+<li> tiedostossa /class/captcha/config.php, varmista, että tilaksi on asetettu "teksti":<br/><br/>
+<span style="font-style: italic;">     return $config = array(<br/>
+    'disabled' =&gt; false, // Poista CAPTCHA käytöstä<br/>
+    'mode' =&gt; 'teksti', // oletustila, voit valita 'teksti', 'kuva', 'recaptcha' (vaatii api-avaimen)<br/>
+    'name' =&gt; 'xoopscaptcha', // captcha-nimi<br/>
+    'skipmember' =&gt; true, // Ohita jäsenten CAPTCHA-tarkistus<br/>
+    'maxattempts' =&gt; 10, // Enimmäisyritysten määrä jokaisessa istunnossa<br/>
+    );</span></li>
+<br/>
+<li> Siirry Profiili-moduulissa kohtaan Admin ja perusvaiheessa, joka sijaitsee osoitteessa:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            aseta "Tallenna pysäytyksen jälkeen" arvoksi "Ei"
+        </li>
+<br/><br/>
+<li> Aseta Profiiliasetuksissa "Käytä Captchaa toisen rekisteröintivaiheen jälkeen" -asetukseksi "Kyllä" (se on oletusarvo)</li>
+<br/>
+<ul>
+<h4 class="odd">OHJEET</h4>
+<p class="even">Opastus tulossa pian.<br/></p>
+ -----Ohjesisältö ---------- 
+</ul></ul></div>
