@@ -1,0 +1,36 @@
+<div class="outer" id="help-template">
+<h1 class="head">Ohje: Mallit</h1>
+<h4 class="odd">Kuvaus</h4>
+<p class="even">
+        XOOPS mahdollistaa jonkinlaisen eron sivuston todellisen esityksen välillä ("<em>iho</em>” tai käyttöliittymä) ja takana oleva koodi. Ensimmäinen käsitellään hienostuneella graafisiin teemoihin perustuvalla mekanismilla. Teema voi sisältää perusmuodossaan olennaisen HTML:n
+        malleja, jotka määrittävät sivuston visuaalisen käyttöliittymän, sekä tyylisivut ja kuvat, joita tarvitaan visuaalisen käyttöliittymän täydentämiseen. Teemat ovat vaihdettavissa hallinnollisessa käyttöliittymässä, joten XOOPS-sivuston koko ulkoasun muuttaminen on vain kysymys
+        valitsinta ja napsauta "Hyväksy". XOOPS tarjoaa myös sivuston ylläpitäjille mahdollisuuden antaa käyttäjien valita joistakin käytettävissä olevista teemoista.<br/><br/>
+
+        Yleisesti ottaen a <strong><em>teema</em></strong> on sivuston korkean tason visuaalinen kehys: teema määrittelee esimerkiksi sivuston yleisen asettelun; toisaalta se ei yleensä määrittele sisällön erityistä jakautumista lohkon sisällä. Tätä hoitaa a
+        eri entiteetti nimeltä a <em><strong>mallisarja</strong></em>. Mallisarja<em> </em>on kokoelma HTML-malleja, jotka määrittelevät sisällön esittämisen kaikissa XOOPS-verkkosivuston muodostavissa lohkoissa. Jos haluamme tähän selkeämmän metaforan, voisimme sanoa, että teema on kuin
+        talon arkkitehti, kun taas mallisarja on kuin sisustussuunnittelija. Ensimmäinen asettaa seinät ja määrittelee yleisen jakauman, mutta toinen on vastuussa "<em>pukeutuminen</em>” ne seinät.<br/><br/>
+
+        Jos aktiivinen teema on yksinkertainen, joka sisältää vain teematiedoston, CSS-tiedostoja ja joitain kuvia, XOOPS käyttää oletusmallisarjaa lohkojen esitystavan määrittelemiseen. Jotkut monimutkaiset teemat ovat kuitenkin tarpeeksi kehittyneitä sisällyttääkseen oman mallisarjansa. Tässä tapauksessa sivusto
+        järjestelmänvalvojan on käytettävä järjestelmänvalvojan käyttöliittymää asettaakseen sekä teeman että mallisarjan. <br/><br/>
+
+        Millainen on teema <em>taikuutta</em> onnistunut? Eli kuinka HTML-mallit voivat sisältää dynaamista sisältöä? Tätä ei tehdä peileillä ja savulla, vaan älykkäällä mallimoottorilla nimeltään
+        <strong><a href="https://www.smarty.net/" rel="external">Älykäs</a></strong> joka tekee funktion siitä, mitä aiemmin kutsuttiin
+        <em><strong>muuttujan interpolointi</strong></em>. Yksinkertaisesti ilmaistuna voisimme sanoa, että XOOPS-järjestelmä käyttää PHP-tiedostoja ylläpitämään moduulien logiikkaa (pääsy tietokantaan, muuttujien allokointi, oikeuksien hallinta...), HTML-tiedostoja, joihin on lisätty Smarty-muuttujia hallitsemaan
+        todellinen visuaalinen käyttöliittymä ja Smarty-moottori arvojen ja merkkijonojen lisäämiseksi tiettyihin paikkoihin HTML:ssä, joka rakentaa loppukäyttäjän näkemät sivut. Kaiken kaikkiaan, mitä tämä tarkoittaa sinulle, voidaan tiivistää helposti: teemajärjestelmänsä ansiosta XOOPS antaa sivustosuunnittelijoiden rakentaa lisää
+        mielenkiintoisia ja visuaalisesti upeita sivustoja ilman suurta huolta siitä, mitä konepellin alla tapahtuu.
+    </p>
+<h4 class="odd">Mallijoukkojen kloonaus ja lataaminen</h4>
+<p class="even">
+        Jos haluat luoda mukautetun mallisarjan, voit tehdä kopion oletusjoukosta (tai mistä tahansa muusta) valitsemalla "<em>klooni</em>' -linkki (sinua pyydetään antamaan nimi uudelle sarjalle). Toisin kuin oletusarvossa, muita mallijoukkoja voidaan muokata vapaasti. Voit myös tallentaa kopion a
+        Aseta malli levylle valitsemalla "<em>lataa</em>' -linkkiä tai poista se "<em>poista</em>-linkki. Saatat myös joskus nähdä ylimääräisen "<em>Luo</em>' linkki uusien moduulien vieressä, joille ei ole vielä luotu malleja.
+    </p>
+<h4 class="odd">Mallien muokkaaminen</h4>
+<p class="even">
+        Näet täydellisen luettelon käytettävissä olevista malleista selaamalla hakemistopuunäkymää. Kun valitset mallin, XOOPS avaa sen editorissa, jossa voit muokata sitä. <br/><br/>
+
+        Mallien muokkauksen aikana sinun on otettava käyttöön asetus, joka päivittää automaattisesti moduulimallipohjan .tpl-tiedostot, jos nykyisen teeman teemojen/teemasi/mallien hakemistossa on uudempia tiedostoja (Järjestelmämoduuli -&gt; Asetukset -&gt; Yleiset asetukset -&gt; Päivitä moduulimallin .tpl-tiedostot
+        teemat/teema/mallit-hakemistosta? -&gt; "<em>Kyllä</em>'). Tämä on poistettava käytöstä, kun sivusto tulee julkiseksi.<br/><br/>
+        Jos sotket mallin vahingossa, älä unohda, että voit hakea<em>hyvä</em>' kopio oletusmallijoukosta. Jos käytät epätyypillisiä malleja, saattaa olla hyvä idea tallentaa kopio levylle ennen kuin alat muokata niitä.
+
+    </p>
+</div>

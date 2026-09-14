@@ -1,0 +1,59 @@
+<div class="outer" id="help-template">
+<h1 class="head">Ohje: Asetukset</h1>
+<h4 class="odd">Kuvaus</h4>
+<p class="even">
+        Asetuspaneeleissa voit määrittää sivuston laajuiset asetukset. Niiden käsittelyyn kannattaa varata aikaa, sillä joillakin asetuksilla voi olla merkittävä vaikutus sivustosi suorituskykyyn, turvallisuuteen ja helppokäyttöisyyteen.
+    </p>
+<h4 class="odd">Yleiset asetukset</h4>
+<p class="even">
+        Nämä ovat tärkeimmät ja useimmin käytettävät asetukset. Sinä määrität sivuston nimen ja iskulauseen verkkosivustollesi. Voit myös valita oletusteeman ja järjestelmänvalvojan käyttöliittymän. Ja jos sinun on työskenneltävä verkkosivustollasi, voit sulkea sen kaikilta käyttäjiltä. Voit myös asettaa moduulin laajuisen välimuistin
+        kertaa.
+    </p>
+<h4 class="odd">Sisällönkuvauskentät ja alatunniste</h4>
+<p class="even">
+        Sisällönkuvauskentät antavat tietoja tiedoistasi – ne kuvaavat verkkosivustosi luonnetta. Niiden pääasiallinen käyttö on auttaa hakukoneita ja heidän robottejaan indeksoimaan sivustosi oikein, eli auttaa oikeita ihmisiä löytämään sen. Antamasi tiedot sisältyvät jokaisen verkon otsikkoon
+        sivulle. Sen tulee edustaa sivuston sisältöä kokonaisuutena - metatiedot ovat samat joka sivulla, sitä ei tällä hetkellä voi mukauttaa eri moduuleille tai sivuille.<br/><br/>
+
+        Huomaa, että suurimmat hakukoneet käyttävät erilaisia ​​strategioita verkkosivustojen indeksoimiseen. He voivat asettaa sisällönkuvauskentille erilaisia ​​painotuksia tai jopa jättää ne huomiotta. Metatietojen huolellinen käyttö voi auttaa verkkosivustoasi saamaan parempia sijoituksia hakukoneissa, ja sitä on hyödyllistä etsiä
+        tietoja hallitsevien viittaajien indeksointistrategioista (katso verkkosivustosi lokitiedosto). Tämä voi auttaa sinua optimoimaan metatietosi tai muita sivustosi suunnittelun ja sisällön näkökohtia parantaaksesi sijoitustasi. <br/><br/>
+
+        Yritä olla tarkka ja rehellinen metatietojen antamisessa. Älä yritä '<em>manipuloida</em>' hakukoneita saadakseen paremman sijoituksen – he saattavat tunnistaa tämän käyttäytymisen ja sivustosi saatetaan alentaa tai lisätä niiden hakemistosta mustalle listalle.
+
+        <br/><br/>The <strong>Meta Tekijänoikeus</strong> ja <strong>Alatunniste</strong> -kentät molemmat tukevat kahta korvaavaa tunnistetta ylläpidon yksinkertaistamiseksi.
+        <br/> - <strong>{X_SITEURL}</strong> korvataan sivustosi pääsivun täydellisellä URL-osoitteella.
+        <br/> - <strong>{X_YEAR}</strong> korvataan nykyisellä nelinumeroisella vuodella. Se poistaa tarpeen päivittää ylempää tekijänoikeuspäivää vuosittain.
+    </p>
+<h4 class="odd">Sanansensuuriasetukset</h4>
+<p class="even">
+        XOOPS voi automaattisesti sensuroida ei-toivotut sanat, joita sivustosi vierailijat saattavat lähettää, ja korvata ne valitsemallasi yleisellä, vaihtoehtoisella termillä. Sensuuritoiminto kuluttaa joitakin järjestelmäresursseja ja saattaa hidastaa sivustoasi jonkin verran. Se on oletuksena pois käytöstä.<br/><br/>
+
+        Ota sensuuri käyttöön sivustossasi valitsemalla "<em>ota käyttöön</em>' -valintanappi. Sinun on syötettävä luettelo ei-toivotuista sanoista "<em>sanoja sensuroida</em>-ruutuun, erottamalla ne piippumerkillä. Tämä toiminto ei erota kirjainkoosta. Kirjoita sopiva korvaava termi "<em>korvaa
+            huonoja sanoja kanssa</em>-ruutuun. Oletus on #OOPS#.
+
+    </p>
+<h4 class="odd">Hakuasetukset</h4>
+<p class="even">
+        Hakutoiminto on yksi tärkeimmistä työkaluista tiedon löytämiseksi portaalin verkkosivustolta. XOOPS-haku luokittelee tulokset moduulien mukaan – tietueet tunnistetaan uutisiksi, latauksiksi, linkeiksi tai muunlaisiksi asentamiesi moduulien mukaan. <br/><br/>
+
+        Yleiset haut kaikista sivustosi resursseista ovat oletuksena käytössä. Jos poistat yleiset haut käytöstä, tämä toiminto ei ole enää käytettävissä ja hakulohko lakkaa toimimasta.
+        Hakujen avainsanan oletuspituus on viisi merkkiä. Lyhyemmät termit ohitetaan. Tämä on hyödyllinen hakujen tarkkuuden hallinnassa, joskaan ei paljon käyttöä termeille, kuten "sivustokartta". Lyhyet avainsanat ovat yleensä yleisempiä, joten ne tuottavat yleensä suuremman tuloksen
+        tietueiden määrä, joista monet voivat olla merkityksettömiä. Pidemmät avainsanat hakevat yleensä vähemmän tietueita, mutta suuremmalla tarkkuudella.<br/><br/>
+
+        Haku on suhteellisen kallista laskennallisesti, joten lyhyiden termien poissulkeminen vähentää palvelimen kuormitusta. Muista kuitenkin, että joskus on hyödyllistä pystyä etsimään lyhyellä aikavälillä.
+
+    </p>
+<h4 class="odd">Sähköpostin asetukset</h4>
+<p class="even">
+        Tätä ohjauspaneelin osaa käytetään sähköpostisi konfigurointiin järjestelmää varten. On suositeltavaa jättää sähköpostin toimitustapa oletusasetukseksi "PHP (mail)". Sinun ei tarvitse täyttää Sendmail- tai SMTP-kenttiä, ellet käytä vaihtoehtoista sähköpostin toimitusvaihtoehtoa.
+    </p>
+<h4 class="odd">Todennusasetukset</h4>
+<p class="even">
+        Jätä se Xoops-tietokantaan, niin voit jättää huomioimatta kaikki muut siellä olevat vaihtoehdot.<br/><br/>
+
+        LDAP- tai Microsoft Active Directory -palvelimet on lisätty todennusta varten vaihtoehtona tavallisille Xoops-käyttäjille. Syynä on se, että monilla yrityksillä on jo käyttäjätietokanta ADS:ssä tai LDAP:ssa, ja ne voivat käyttää sitä kirjautuessaan sisään XOOPS:iin, eikä sinun tarvitse rekisteröidä toista tiliä.
+    </p>
+<h4 class="odd">Järjestelmämoduulin asetukset</h4>
+<p class="even">
+        Täällä voit aktivoida/deaktivoida jokaisen System-osion sekä määrittää järjestelmän laajuisia oletusasetuksia, esim. sivulla näytettyjen avatarien tai kuvien lukumäärästä. Voit myös valita oletuseditorin lohkoille, kommenteille ja kaikille moduuleille.
+    </p>
+</div>

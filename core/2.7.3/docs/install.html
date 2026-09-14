@@ -1,0 +1,135 @@
+html JULKINEN "-//W3C//DTD HTML 4.01 Transitional//FI"
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>XOOPS-asennusohjeet</title>
+<meta content="XOOPS" name="keywords"/>
+<meta content="XOOPS installation guide" name="description"/>
+<style type="text/css">
+        body {
+            font-family:                        Lucida Grande, Verdana, Geneva, Sans-serif;
+            margin:                             0;
+            padding:                            0;
+            font-size:                          13px;
+            color:                              #333;
+            background-color:                   #fff;
+        }
+
+        a {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+            font-weight:                        normal;
+        }
+
+        a:visited {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+        }
+
+        a:hover {
+            color:                              #3D9DD3;
+            text-decoration:                    none;
+            background-color:                   transparent;
+        }
+
+        .page {
+            background-color:                   #fff;
+            margin:                             10px 30px 0;
+            padding:                            0;
+        }
+
+        .page h1 {
+            background-color:                   transparent;
+            border-bottom:                      1px solid #999;
+            color:                              #000;
+            font-size:                          18px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h2 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          16px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h3 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          14px;
+            font-weight:                        bold;
+        }
+
+        .page ul {
+            margin:                             20px 0 15px 0;
+        }
+
+        .page li {
+            margin-bottom:                      9px;
+        }
+
+        .page li p {
+            margin-left:                        0;
+            margin-right:                       0;
+        }
+
+        p {    }
+
+    </style>
+</head>
+<body>
+<div class="page">
+<h1>Asennetaan XOOPS</h1>
+<h2>Ensimmäinen asennuskerta</h2>
+<h3>Esipuhe:</h3>
+<p>
+<abbr title="eXtensible Object-Oriented Portal System">XOOPS</abbr> on avoimen lähdekoodin lähde
+        PHP:llä kirjoitettu olio-verkkojulkaisujärjestelmä. Se on ihanteellinen työkalu
+        kehittää pienistä suuriin dynaamisia yhteisösivustoja, yrityksen sisäisiä portaaleja, yritysportaaleja, verkkoblogeja ja paljon muuta.
+    </p>
+<p>
+        XOOPS julkaistaan ehtojen mukaisesti
+        <a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="external">GNU General Public License (GPL)</a>
+        versio 2 tai uudempi, ja sitä voi käyttää ja muokata ilmaiseksi.
+        Sen jakaminen on ilmaista, kunhan noudatat GPL:n jakeluehtoja.
+    </p>
+<h2>Vaatimukset</h2>
+<ul>
+<li>WWW-palvelin (<a href="http://www.apache.org/" rel="external">Apache</a>, <a href="https://www.nginx.com/" rel="external" s="">NGINX</a>, IIS jne)</li>
+<li><a href="https://www.php.net/" rel="external">PHP</a> 8.2 tai uudempi, 8.4+ suositeltava</li>
+<li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.7 .8 tai uudempi, MySQL 8.4.5+ suositeltava</li>
+</ul>
+<h3>Ennen asennusta</h3>
+<ol>
+<li>Asenna WWW-palvelin, PHP ja tietokantapalvelin oikein.</li>
+<li>Valmistele tietokanta XOOPS-sivustollesi.</li>
+<li>Valmistele käyttäjätili ja anna käyttäjälle pääsy tietokantaan.</li>
+<li>Tee hakemistoista ja tiedostoista kirjoitettavat: %s</li>
+<li>Turvallisuussyistä sinun on erittäin suositeltavaa siirtää alla olevat kaksi hakemistoa pois <a href="http://phpsec.org/projects/guide/3.html" rel="external">asiakirjan juuri</a> ja muuta kansioiden nimet: %s</li>
+<li>Luo (jos ei ole jo olemassa) ja tee hakemistoista kirjoitettavat: %s</li>
+<li>Ota selaimesi evästeet ja JavaScript käyttöön.</li>
+</ol>
+<h2>Asennus paikallisesti</h2>
+<p>Jos käytät paikallista kehitys- tai testausympäristöä, varmista, että sinulla on edellinen
+    vaatimukset täyttyvät. Kun tämä on tehty, kopioi tiedoston sisältö <em>htdocs</em> -hakemisto (XOOPS:sta
+    jakelutiedosto) verkkoympäristösi pääasiakirjan polkuun. Kun tiedostot on kopioitu sinne,
+    voit aloittaa asennuksen osoittamalla selaimesi osoitteeseen "http://<em>sivustosi.com</em>". Tämä aloittaa asennusprosessin.
+</p>
+<h2>Asentaminen isännöityyn alustaan</h2>
+<p>Jos käytät isännöidyssä ympäristössä, pura XOOPS-tiedostot paikallisesti tai palvelimella, jos sinulla on
+    shell (eli SSH) pääsy. Kun olet valmis, muista siirtää tai kopioida kaikki XOOPS-tiedostot tiedostosta <em>htdocs</em>
+    -hakemistosta juuriverkkohakemistoosi (palveluntarjoajasi tarjoaa yleensä tähän sijaintiin ohjeet).
+    Kun tiedostot on kopioitu sinne, voit aloittaa asennuksen osoittamalla selaimesi
+    "http://<em>sivustosi.com</em>". Tämä aloittaa asennusprosessin.
+</p>
+<h2>Asennusta jatketaan</h2>
+<p>Seuraa vain asennusohjelman vaiheittaisia ohjeita.</p>
+</div>
+</body>
+</html>
